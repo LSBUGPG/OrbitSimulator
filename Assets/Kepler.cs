@@ -10,8 +10,8 @@ public class Kepler : MonoBehaviour
     void Start()
     {
         // initial velocity of Earth in AU/year
-        float speedAtPerhelion = 6.38966f;
-        Vector3 start = Vector3.up * speedAtPerhelion * Earth.mass;
+        float speedAtPerihelion = 6.38966f;
+        Vector3 start = Vector3.up * speedAtPerihelion * Earth.mass;
         Earth.AddForce(start, ForceMode.Impulse);
         Sun.AddForce(-start, ForceMode.Impulse);
     }
